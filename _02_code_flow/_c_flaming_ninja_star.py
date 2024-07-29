@@ -21,42 +21,42 @@ if __name__ == '__main__':
     flameSize = 130         # the length of the flaming arms
     
     # Make a new turtle
-    turtle_turtle = 
+    turtle_turtle = turtle.Turtle()
     # Make the turtle shape 'turtle', .shape('turtle')
-    
+    turtle_turtle.shape('turtle')
     # Set the turtle width to 2
-    
+    turtle_turtle.turtlesize(stretch_wid=2, stretch_len=2, outline=4)
     # Set the turtle speed to 0 (fastest)
-    
+    turtle_turtle.speed(0)
     # Use a for loop to repeat all of the code below ONE time (we will change
     # this later)
-        
+    for i in range(1):
         # Set the turtle .fillcolor() to orange
-        
+        turtle_turtle.color('orange')
         # Call the turtle .begin_fill() function
-        
+        turtle_turtle.begin_fill()
         # TURN RIGHT     Turn the turtle 1/8 of a circle (hint: 360 degrees
         #                will turn a full circle)
-        
+        turtle_turtle.right(360/8)
         # DRAW           Move the turtle 64 pixels
-        
+        turtle_turtle.forward(64)
         # TURN LEFT      Turn the turtle 40 degrees to the LEFT. (Negative
         #                numbers will turn the turtle counter-clockwise.)
-        
+        turtle_turtle.left(40)
         # DRAW FLAME     Move the turtle the distance in the variable flameSize
-        
+        turtle_turtle.forward(flameSize)
         #                Turn the turtle to the right 170 degrees
-         
+        turtle_turtle.right(170)
         #                Move the turtle the distance in the variable flameSize (again)
-         
+        turtle_turtle.forward(flameSize)
         #  TURN RIGHT    Turn the turtle 62 degrees to the right
-        
+        turtle_turtle.right(62)
         #  DRAW          Move the turtle the distance in the variable baseSize
-        
+        turtle_turtle.forward(baseSize)
         # Call the turtle .end_fill() method
-        
+        turtle_turtle.end_fill()
     # Hide your turtle so you can see the pattern.
-        
+    turtle_turtle.hideturtle()
     # TEST   Run the program. Check that your shape is the same as the first
     #        picture in the recipe. This is one arm of the ninja star.
 
