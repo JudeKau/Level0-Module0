@@ -21,7 +21,7 @@ if __name__ == '__main__':
     flameSize = 130         # the length of the flaming arms
     
     # Make a new turtle
-    
+    turtle_turtle = 
     # Make the turtle shape 'turtle', .shape('turtle')
     
     # Set the turtle width to 2
