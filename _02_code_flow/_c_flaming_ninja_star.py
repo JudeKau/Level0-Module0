@@ -30,7 +30,7 @@ if __name__ == '__main__':
     turtle_turtle.speed(0)
     # Use a for loop to repeat all of the code below ONE time (we will change
     # this later)
-    for i in range(1):
+    for i in range(25):
         # Set the turtle .fillcolor() to orange
         turtle_turtle.color('orange')
         # Call the turtle .begin_fill() function
@@ -63,9 +63,9 @@ if __name__ == '__main__':
     # COLOR  Change the turtle's pen color so that the flame is a different
     #        color to the rest of the star. Run the program again. Check the
     #        second picture in the recipe.
-
+    turtle_turtle.pencolor('red')
     # LOOP   When you have one arm looking right, change your for loop to
     #        repeat 25 times.
-    
+
     # call the turtle .done() method
     turtle.done()
