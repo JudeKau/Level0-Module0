@@ -8,21 +8,26 @@ if __name__ == '__main__':
     # Hide the window using the window's .withdraw() method
     window.withdraw()
     # 1. Make a variable equal to a positive number less than 4 using random.randInt(0, 3)
-    random=random.randint(0, 3)
+    random = random.randint(0, 3)
     # 2. Print your variable to the console
-    print(window)
+    print(random)
     # 3. Get the user to enter something that they think is awesome
     name=simpledialog.askstring(title='Greeter', prompt="Type what you think is awesome here")
     # 4. If your variable is  0
         # -- tell the user whatever they entered is awesome!
-        if random=="0":
+    if random==0:
+            messagebox.showinfo(title='Greeter', message="That is awesome")
     # 5. If your variable is  1
         # -- tell the user whatever they entered is ok.
-    
+    if random==1:
+            messagebox.showinfo(title='Greeter', message="That is ok")
     # 6. If your variable is  2
         # -- tell the user whatever they entered is boring.
-    
+    if random==2:
+            messagebox.showinfo(title='Greeter', message="That is boring")
     # 7. If your variable is  3
         # -- invent your own message to give to the user (be nice).
-        
+    if random==3:
+            messagebox.showinfo(title='Greeter', message="Try again")
     # Run the window's .mainloop() method
+    window.mainloop()
